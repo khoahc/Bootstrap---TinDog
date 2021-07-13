@@ -9,7 +9,7 @@
     color:#fff;
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 8%;
 }
 h1{
     font-family: "Montserrat", sans-serif;
@@ -39,18 +39,23 @@ h1{
 
 /* Download Buttons */
 .download-btn{
-    margin: 5% 3% 5% 0;
+    margin: 8% 3% 5% 0;
 }
 
 /* Title Image */
 .title-img{
-    width: 60%;
+    /* width: 60%; */
     transform: rotate(25deg);
+    position: absolute;
+    right: 25%;
 }
 
 /* Features Section */
 #features{
-    padding: 7% 15%;
+    padding: 3% 15%;
+    background-color: #fff;
+    position: relative;
+    /* z-index: 1; */
 }
 .feature-box{
     text-align: center; 
@@ -114,3 +119,11 @@ h2{
     margin: 10px 25px 50px;
 }
 
+/* Pricing Section */
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+.pricing-column{
+    padding: 3% 2% ;
+}
