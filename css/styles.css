@@ -1,21 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Ubuntu:wght@300;400&display=swap');
-*{
+body{
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
-#title{
+h1, h2, h3{
+    font-weight: 900;
+    line-height: 1.5; 
+}
+p{
+    color: #8f8f8f;
+}
+
+.container-fluid{
+    /* padding: 3% 15% 8%; */
+    padding: 5% 15%;    
+}
+/* Heading  */
+.big-heading{
+    font-size: 3.75rem;
+    /* text-align: left; */
+}
+.section-heading{
+    font-size: 2.75rem;
+}
+
+/* Color Section */
+.colored-section{
     background-color: #ff4c68;
     color:#fff;
 }
-.container-fluid{
-    padding: 3% 15% 8%;
-}
-h1{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    font-size: 4rem;
-    line-height: 1.5; 
+.white-section{
+    background-color: #fff;
 }
 
 /* Navigation Bar */
@@ -34,7 +51,13 @@ h1{
 .nav-link{
     font-size: 1.25rem;
     font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
+}
+
+/* Title Section */
+#title .container-fluid{
+    text-align: left;
+    padding: 3% 15% 8%;
 }
 
 /* Download Buttons */
@@ -52,23 +75,16 @@ h1{
 
 /* Features Section */
 #features{
-    padding: 3% 15%;
-    background-color: #fff;
     position: relative;
     /* z-index: 1; */
 }
-.feature-box{
-    text-align: center; 
-    padding: 3%;
-}
-h3{
+#features h3{
+    font-weight: bold;
     font-size: 1.5rem;
-    font-weight: bolder;
 }
-p{
-    color: #8f8f8f;
+.feature-box{
+    padding: 1%;
 }
-
 /* Features Icon */
 .icon{
     color: #ef8172;
@@ -79,16 +95,12 @@ p{
 }
 
 /* Testimonials Seection */
-#testimonials{
+#testimonials .container-fluid{
     background-color: #ef8172;
-    color: #fff;
-    text-align: center;
+    padding: 3% 9%;
+    height: 60vh;
 }
-h2{
-    font-weight: bolder;
-    font-size: 3.25rem;
-    line-height: 1.5;
-}
+
 .testimonial-image{
     width: 12%;
     border-radius: 100%;
@@ -111,8 +123,7 @@ h2{
 /* Press Section */
 #press{
     background-color: #ef8172;
-    text-align: center;
-    padding: 3%;
+    padding: 3% 15% 3%;
 }
 .press-logo{
     width: 15%;
@@ -120,84 +131,73 @@ h2{
 }
 
 /* Pricing Section */
-#pricing{
-    padding: 100px;
-    text-align: center;
-}
 .pricing-column{
     padding: 3% 2% ;
 }
 
-/* Call to Action */
-#cta{
-    background-color: #ff4c68;
-    color: #fff;
-    text-align: center;
-    padding: 7% 15%;
-}
-.cta-text{
-    font-size: 3.5rem;
-    font-weight: 900;
-    line-height: 1.5;
-}
-
 /* footer */
-#footer{
-    background-color: #fff;
-    padding: 3% 15%;
-    text-align: center;
-}
 .icon-contact{
     margin: 30px 30px;
 }
-.footer-link{
-    color: #000;
-}
-.footer-link:hover{
+.footer-link, .footer-link:hover{
     color: #000;
 }
 
 /* media */
 @media (max-width:1460px) {
-    h1{
+    .big-heading{
         font-size: 3rem;
+    }
+    .section-heading{
+        font-size: 2.5rem;
+    }
+    .title-img{
+        width: 20%;
     }
 }
 
 @media (max-width:1200px) {
-    .container-fluid{
-        padding: 3% 10% 8%;
+    .big-heading{
+        font-size: 2.75rem;
+    }
+    .section-heading{
+        font-size: 2.25rem;
+    }
+    .press-logo{
+        width: 20%;
+        margin: 10px 10px 50px;
     }
     .title-img{
-        width: 60%;
+        width: 70%;
         transform: rotate(0);
         position: static;
         display: block;
         margin: auto;
     }
-    h1{
-        font-size: 2.75rem;
-    }
-    .cta-text{
-        font-size: 2.5rem;
-    }
-    h2{
-        font-size: 2.5rem;
-    }
 }
 
 @media (max-width:991px) {
-    #title{
+    p{
+        font-size: 1.25rem;
+    }
+    #title .container-fluid{
         text-align: center;
+    }
+    #testimonials .container-fluid{
+        padding: 7%;
+    }
+    #features h3{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .big-heading{
+        font-size: 3rem;
+    }
+    .section-heading{
+        font-size: 2rem;
     }
     .title-img{
         padding-top: 20px;
         width: 50%;
-    }
-    h2{
-        font-size: 2rem;
-    }
-    p{
-        font-size: 1.25rem;
     }
 }
